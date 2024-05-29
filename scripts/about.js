@@ -15,3 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add more complex animations if needed
 });
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('bgVideo');
+        video.playbackRate = 0.5; // Adjust the value to slow down the video (0.5 is half speed)
+    });

@@ -14,9 +14,28 @@ html, body {
     color: #fff; /* White text */
 }
 
+.full-width-wrapper {
+    width:100vh;
+    height:100vh;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bgVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .about-container {
-    /* background-color: white; */
-    /* width:1%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,16 +44,14 @@ html, body {
 }
 
 .about-content {
-    /* width:100%; */
-    color:black;
+    color: black;
     text-align: center;
     max-width: 800px;
-    background: rgb(255, 255, 255);
-    /*Slightlytransparentbackground*/padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     animation: fadeIn 1.5s ease-in-out;
-    -webkit-animation: fadeIn 1.5s ease-in-out;
 }
 
 .profile-photo {
@@ -55,25 +72,26 @@ html, body {
     line-height: 1.6;
 }
 
-.school {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.skills-content {
+    margin-top: 30px;
+}
+
+.skills-content h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.school h3,
-.school p {
-    margin: 0;
-    font-size: 1.2rem;
+.skill {
+    margin-bottom: 20px;
 }
 
-.school h3 {
-    flex: 1;
-    margin-right: 10px;
+.skill h3 {
     font-size: 1.5rem;
 }
 
+.skill p {
+    font-size: 1.2rem;
+}
 
 /* Animations */
 @keyframes fadeIn {
@@ -113,6 +131,22 @@ html, body {
     .text-content p {
         font-size: 1rem;
     }
+
+    .skills-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .skill h3 {
+        font-size: 1.2rem;
+    }
+
+    .skill p {
+        font-size: 1rem;
+    }
+
+    .about-container {
+        color:red 
+    }
 }
 
 @media (max-width: 480px) {
@@ -127,63 +161,73 @@ html, body {
     .about-content {
         padding: 10px;
     }
+
+    .skills-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .skill h3 {
+        font-size: 1rem;
+    }
+
+    .skill p {
+        font-size: 0.9rem;
+    }
+
+    
 }
 
 .full-width-wrapper {
     position: relative;
     z-index: 1;
     color: #fff; /* Set text color */
-  }
-  
-  /* Full-width wrapper styles */
-  .full-width-wrapper {
+}
+
+/* Full-width wrapper styles */
+.full-width-wrapper {
     width: 100%;
     padding: 0;
     margin: 0;
     background-color: #111111;
     color: #ffffff;
-  }
-  
-  .container-fuild {
-    padding-top: 100rem;
-  }
-  /* Make container full width */
-  .full-width-wrapper .container {
+}
+
+/* Make container full width */
+.full-width-wrapper .container {
     width: 100%;
     max-width: none;
     padding: 0;
     background-color: transparent;
-  }
-  
-  /* Navbar styles */
-  .navbar {
+}
+
+/* Navbar styles */
+.navbar {
     background-color: transparent;
     font-family: monospace;
     color: #ffffff;
-  }
-  
-  .navbar-brand {
+}
+
+.navbar-brand {
     padding-left: 2rem;
-  }
-  
-  .custom-navbar {
+}
+
+.custom-navbar {
     background-color: transparent; /* Make the navbar background transparent */
     border-bottom: none; /* Optional: Remove any bottom border */
-  }
-  
-  .nav-item {
+}
+
+.nav-item {
     padding-left: 5rem;
     font-family: monospace;
-  }
-  
-  .custom-navbar .navbar-brand,
-  .custom-navbar .nav-link {
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
     font-size: 20px;
     color: white !important; /* Set text color to white */
-  }
-  
-  .custom-navbar .nav-link:hover,
-  .custom-navbar .nav-link:focus {
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
     color: #ccc !important; /* Optional: lighter color on hover */
-  }
-  
+}
