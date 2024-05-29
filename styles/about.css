@@ -1,0 +1,189 @@
+/* about.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+.about-container {
+    /* background-color: white; */
+    /* width:1%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 100px;
+}
+
+.about-content {
+    /* width:100%; */
+    color:black;
+    text-align: center;
+    max-width: 800px;
+    background: rgb(255, 255, 255);
+    /*Slightlytransparentbackground*/padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+    -webkit-animation: fadeIn 1.5s ease-in-out;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.school {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.school h3,
+.school p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.school h3 {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    .about-content {
+        padding: 10px;
+    }
+}
+
+.full-width-wrapper {
+    position: relative;
+    z-index: 1;
+    color: #fff; /* Set text color */
+  }
+  
+  /* Full-width wrapper styles */
+  .full-width-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #111111;
+    color: #ffffff;
+  }
+  
+  .container-fuild {
+    padding-top: 100rem;
+  }
+  /* Make container full width */
+  .full-width-wrapper .container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: transparent;
+    font-family: monospace;
+    color: #ffffff;
+  }
+  
+  .navbar-brand {
+    padding-left: 2rem;
+  }
+  
+  .custom-navbar {
+    background-color: transparent; /* Make the navbar background transparent */
+    border-bottom: none; /* Optional: Remove any bottom border */
+  }
+  
+  .nav-item {
+    padding-left: 5rem;
+    font-family: monospace;
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link {
+    font-size: 20px;
+    color: white !important; /* Set text color to white */
+  }
+  
+  .custom-navbar .nav-link:hover,
+  .custom-navbar .nav-link:focus {
+    color: #ccc !important; /* Optional: lighter color on hover */
+  }
+  
