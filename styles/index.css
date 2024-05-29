@@ -1,0 +1,98 @@
+/* Ensure the html and body take up the full viewport height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+/* Full-width wrapper styles */
+.full-width-wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+/* Make container full width */
+.full-width-wrapper .container {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: transparent;
+  font-family: monospace;
+  color: #ffffff;
+}
+
+.custom-navbar {
+  background-color: transparent; /* Make the navbar background transparent */
+  border-bottom: none; /* Optional: Remove any bottom border */
+}
+
+.nav-item {
+  padding-left:10%;
+  font-family: monospace;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  font-size: 20px;
+  color: white !important; /* Set text color to white */
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+  color: #ccc !important; /* Optional: lighter color on hover */
+}
+
+/* Wrapper styles to center content */
+.info {
+  height: 95vh; 
+  width: 100vw; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background-color: #111111; /* Background color */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.effect-wrapper {
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+#typed {
+  font-weight: bold;
+  color: #00bdff;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #b0ff95;
+  animation: blinker 800ms infinite;
+}
+
+.cursor.typing-true {
+  animation: none;
+}
+
+@keyframes blinker {
+  0% { background-color: #00aeff; }
+  50% { background-color: transparent; }
+  100% { background-color: #00aeff; }
+}
